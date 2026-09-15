@@ -1,0 +1,44 @@
+{
+  "name": "eslint-plugin-rowcap",
+  "version": "0.1.0",
+  "description": "Catch Supabase/PostgREST queries that silently stop at 1,000 rows and return success.",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "supabase",
+    "postgrest",
+    "postgres",
+    "pagination",
+    "data-loss"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anabecalab/rowcap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anabecalab/rowcap/issues"
+  },
+  "homepage": "https://github.com/anabecalab/rowcap#readme"
+}
